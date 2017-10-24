@@ -1,0 +1,301 @@
+body{
+    background: #b3afaf;
+}
+
+h1,h2,h3{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.page{
+    /*--Dimension & Positionnement--*/
+    width:100%;
+    height: auto;
+    max-width: 1000px;
+/*--Décoration-*/
+    margin: 40px auto;
+    /*--Est équivalent à:
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left : auto;
+    margin-right : auto;
+    margin : 40px auto 40px auto
+    --*/
+}
+
+.page > p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white
+}
+
+/*----------------------------
+TOP HEADER
+-----------------------------*/
+
+.topheader {
+    width: 100%;
+    height: 30px;
+    float: left;
+
+    /*--Décoration--*/
+    background-image: linear-gradient(180deg, rgb(236, 232, 232), rgb(194, 175, 175));
+    border-top-left-radius: 5px;
+
+}
+
+.topheader p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: right;
+    margin: 0;
+    line-height: 28px; /* Utile pour centrer*/
+    margin: 0 10px 0 0;
+}
+
+.topheader p a {
+    color: #78356b;
+    text-decoration: none;
+
+}
+
+.topheader p a:hoover{
+    text-decoration: underline;
+
+
+}
+
+/*-- HEADER ---*/
+
+
+header{
+
+    width: 100%;
+    float: left;
+    height: 130px;
+    background: #fff;
+}
+
+.logo{
+    width: 20%;
+    float: left;
+    height: auto;
+    margin: 10px 0 0 10px;
+   
+
+    /*--Quand je travaille avec une image, je précise soit la largeur, soit la hauteur, afin de garder les proportions de celle-ci. Si je n'ai pas le choix, je peux utiliser la propriété object feet en sachant qu'elle ne sera pas prise en charge par internet explorer !*/
+
+}
+
+.logo img {
+    height: 110px;
+    margin-left: 15px;
+
+}
+
+
+/*-- Menu du Header--*/
+
+nav {
+    width: 75%;
+    height: 100%;
+    float: left;
+
+}
+
+nav ul{
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 125px;
+    text-transform: uppercase;
+     
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+#projecteur img{
+    width: 100%;
+}
+  
+#projecteur {
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+/* Zone de Contenue*/
+
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: white;
+    margin-top: -4px;
+    
+
+}
+section aside {
+    width: 50%;
+    float: left;
+    height: auto;
+}
+section aside img{
+    width: 100%;
+    max-width: 100%;
+}
+section article{
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 1% 5% 0% 5%;
+    box-sizing: border-box;
+
+}
+
+
+section article p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-align: justify;
+}
+
+section article h3{
+    text-align: center;
+    font-weight: normal;
+    
+}
+
+
+/* PARTENAIRE*/
+
+.partenaires{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-image: linear-gradient(180deg, #eee 0%, #fff 30%);
+    margin-top: -4px;
+    margin-bottom: 20px;
+}
+.partenaires h2{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-weight: normal;
+}
+.partenaires ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.partenaires ul li {
+    width: calc(98% / 4);
+    display: inline-block;
+}
+.partenaires ul li img{
+    max-width: 100%;
+    width: 50%;
+    height: 75px;
+}
+
+/*Pied de Page*/
+
+
+footer{
+    width: 100%;
+    float:left;
+    height: auto;
+    
+
+}
+
+.gmap {
+    
+    width: calc( (100% / 3) - 10px);
+    float: left;
+ 
+    padding: 5px;
+}
+
+.newsletter {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+   
+    padding: 5px;
+}
+
+.newsletter form {}
+
+    .newsletter fieldset {
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        color: #FFF;
+        height: 180px;
+    }
+
+    .newsletter legend {}
+
+    .newsletter input {
+        width: 91%;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+
+    .newsletter input[type=submit] {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        background: #FFF;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    } 
+
+    .contact {
+       
+        width: calc( (100% / 3) - 10px);
+        float: left;
+    
+    }
+
+    .contact h3 {
+        color: rgb(24, 23, 23);
+        padding-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: normal;
+    }
+    .contact address {
+        color: rgb(82, 16, 16);
+        padding-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .contact address strong {
+        font-size: 20px;
+    }
+    .contact address a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .contact address a:hover {
+        text-decoration: underline;
+    }
+
+    .footer{
+        float: left;
+        background-image: linear-gradient(to right, rgb(150, 150, 150), rgb(200, 200, 200), rgb(230, 230, 230), rgb(270, 270, 270));
+        
+        width: 100%;
+    }
